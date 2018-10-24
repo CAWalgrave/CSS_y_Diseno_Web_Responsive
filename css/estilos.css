@@ -1,129 +1,258 @@
 @font-face
 	{
-		font-family: FreeSansOblique;
-		src: url(FreeSansOblique.woff);
+		font-family: Dancing_script;
+		src: url(DancingScript-Regular.otf);
+	}
+/*Imagen Central
+	En esta sección debes ubicar una imagen de tu preferencia, considera lo siguiente: 
+	Esta secccion debe tener la imagen centrada.
+    Establece como color de fondo #82c3a6.
+Imagen Secundaria:
+    En esta sección debes ubicar dos imágenes de tu preferencia, debajo de la imagen central una a la derecha y otra a la izquierda ten en cuenta lo siguiente: siguiente: 
+    Esta sección es a dos columnas usando flex para desktop y una columna para móvil 
+    Aplica como color de fondo #d5c75f y un borde de 1px.
+    Cada columna debe tener una imagen centrada y enlazar: la izquierda "paisajes" aplica un efecto de rotación de 10 grados cuando se coloca el puntero sobre ella, 
+    agrega color de sombra #82c3a6 y borde 2px y la derecha "retratos" aplica un efecto de traslación de 5px hacia arriba y 20px a la derecha cuando se coloca el puntero 
+    del ratón sobre ella agrega color de sombra #82c3a6 y borde 2px.*/
+
+body
+	{
+		font-family: Dancing_script;
 	}
 
-body 
+#EncabezadoDePagina
 	{
-
+		background: #5b7989;
+		height: 100%;
+		color: white;
+		text-shadow: 2px 2px #02010a;
 	}
 
-header
+#Pagina
+	{				
+		width: 100%;
+		clear: both;
+		margin: 0 auto;
+	}
+
+/*Cabecera:
+    Esta sección debe contener la información del sitio, toma en cuenta lo siguiente: 
+    Establece el fondo de color #5b7989.
+    Agrega el Nombre del sitio "Comenzando con la fotografía" ubicado al lado izquierdo, en blanco la letra debe tener una sombra de 2px de color #02010a. 
+    Aplica bordes redondeados en las esquinas superiores a 10px.
+    Desarrolla un menú, para la versión desktop, a la derecha con enlaceas a tres páginas: Inicio, Paisajes, Retratos. La página actual debe tener estilo sin subrayado.
+*/
+
+nav
 	{
-  		background: #5b7989;
-  		width: 100%;
-  		height: 100px;
-  		position: fixed;
-  		top: 0px;
+		font-size: 1.5em;
+		line-height: 30px;
+		margin: 0.67cm 0cm 0.67cm 0cm;
+		padding: 0;
+	}
+
+nav li
+	{
+		text-decoration: none;
+		display: inline;
+		padding: 10px;
+	}
+
+nav li a
+	{
+		text-decoration: none;
+		color:white !important;
+	}
+
+nav li a.active
+	{
+		text-decoration: none;
+	}
+
+/*nav a:hover, nav a:active, nav .active a:link, nav .active a:visited
+	{
+		text-shadow: none !important;
+	}*/
+
+.encabezado
+	{
+		display: flex;
+		flex-flow: row wrap;
   		border-radius: top 10px;
 	}
 
-h1
+.titulo
 	{
-		color: white;
-		text-shadow: 2px 2px #02010a;
-		text-align: left;
-		font-family: FreeSansOblique;
 	}
 
-.contenedor
+.menu
 	{
-		margin: 0;
-  		padding: 0;
-  		width: 100%;
+	}
+
+.contenedor 
+	{
+		margin-top: auto;
+	 	width: 100%;
 		display: flex;
 		flex-flow: row wrap;
+		min-height: 1000px;
 	}
 
-.contenedor div 
+.contenedor1
 	{
-  		box-sizing: border-box;
-  		min-height: 600px;
-  		min-width: 100px;
+  		background-color: #82c3a6;
 	}
-	.c1 
-		p 
-		{
-			font-family: helvetica;
-			font-size: 1.4em;
-		}
-	.c2 
-		p 
-		{
-		font-family: helvetica;
-		font-size: 2em;
-		}
-	.c3 
-		p 
-		{
-			font-family: helvetica;
-			font-size: 1em;
-		}
-	.c1 
-		{
-  			color: #ddd;
-  			background-color: #003476;
-			width: 30%;
-		}
-	.c2 
-		{
-			color: #ddd;
-  			background-color: #0062d2;
-			width: 50%;
-		}
-	.c3 
-		{
-			color: #333;
-  			background-color: #b4d2f7;
-			width: 20%;
-		}
-
-@media all and (max-width: 500px) 
+.contenedor2
 	{
-		.c1
+  		background-color: #d5c75f;
+	}
+.contenedor3
+	{
+  		background-color: #d5c75f;
+	}
+.contenedor4
+	{
+  		background-color: #d5c75f;
+  		width: 100%;
+	}
+.contenedor5
+	{
+  		background-color: #d5c75f;
+  		width: 100%;
+	}
+
+@media screen and (min-width: 900px)
+	{
+		.titulo
+			{
+				text-indent: 1cm;
+				float: left;
+				text-align: left;
+				width: 50%;
+			}
+		.menu
+			{
+				float: right;
+				text-align: right;
+				width: 50%;
+			}
+
+		.contenedor1 
+			{
+				width: 100%;
+			}
+		.contenedor2 
+			{
+				width: 50%;
+			}
+		.contenedor3 
+			{
+				width: 50%;
+			}
+		
+		.columna1
+			{
+				width: 25%;
+			}
+		.columna2
+			{
+				width: 25%;
+			}
+		.columna3
+			{
+				width: 25%;
+			}
+		.columna4
+			{
+				width: 25%;
+			}
+}
+
+@media screen and (max-width: 899px)
+	{
+		.titulo
+			{
+				text-align: center;
+				width: 100%;
+			}
+		.menu
+			{
+				text-align: center;
+				width: 100%;
+			}
+
+		.contenedor1 
+			{
+				width: 100%;
+				order: 1;
+			}	
+
+		.contenedor2 
 			{
 				width: 100%;
 				order: 2;
 			}
-		.c2 
-			{
-				width: 100%;
-				order: 1;
-			}
-		.c3 
+		
+		.contenedor3 
 			{
 				width: 100%;
 				order: 3;
 			}
-	}
 
-@media all and (max-width: 800px) and (min-width: 500px) 
-	{
-		.c1 
-			{
-				width: 30%;
-			}
-		.c2 
-			{
-				width: 70%;
-			}
-		.c3 
+		.columna1
 			{
 				width: 100%;
+				order: 1;
 			}
-	}	
+		.columna2
+			{
+				width: 100%;
+				order: 2;
+			}
+		.columna3
+			{
+				width: 100%;
+				order: 3;
+			}
+		.columna4
+			{
+				width: 100%;
+				order: 4;
+			}
+	}
 
 
+/*Pie de página:
+    En esta sección debes ubicar información de contacto, términos, redes sociales, y derechos, aplica las siguientes consideraciones: 
+    Aplica bordes redondeados en las esquinas inferiores a 10px.
+    El pie debe estar a cuatro columnas en desktop y una columna en móvil.
+    Aplica el color de fondo #C6d5c5.
+    La columna de contacto debe contener un correo electrónico, una dirección física y un número telefónico. 
+    En la columna de término agrega una frase corta referente a las políticas.
+    En la columna de Redes Sociales, agrega tres de tu preferencia.
+    En la columna de Derechos agrega tu nombre, apellido, el símbolo de CopyRight y el año actual.
+*/
 footer 
 	{
 		clear: both;
-		border-top: solid 2px #605B56;
-		padding-top: 10px;
-		margin-top: 15px;
-		text-align: center;
-		position: fixed;
-		bottom: 0px;
-		background-color: rgb(150, 185, 103);
-		width: 100%;
+		border-radius: bottom 10px;
+	}
+
+h4
+	{
+		font-weight: unset;
+	}
+
+#PieDePagina
+	{
+
+	}
+
+.pie_de_pagina
+	{
+		text-indent: 1cm;
+		background-color: #C6d5c5;
+		text-align: left;
+		display: flex;
+		flex-flow: row wrap;
 	}
