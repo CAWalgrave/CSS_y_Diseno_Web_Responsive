@@ -17,7 +17,7 @@ Imagen Secundaria:
 
 body
 	{
-		font-family: Dancing_script;
+		font-family: Dancing_script;		
 	}
 
 #EncabezadoDePagina
@@ -55,7 +55,7 @@ nav li
 	{
 		text-decoration: none;
 		display: inline;
-		padding: 10px;
+		padding: 5px;
 	}
 
 nav li a
@@ -68,11 +68,6 @@ nav li a.active
 	{
 		text-decoration: none;
 	}
-
-/*nav a:hover, nav a:active, nav .active a:link, nav .active a:visited
-	{
-		text-shadow: none !important;
-	}*/
 
 .encabezado
 	{
@@ -95,7 +90,10 @@ nav li a.active
 	 	width: 100%;
 		display: flex;
 		flex-flow: row wrap;
-		min-height: 1000px;
+	}
+img
+	{
+		margin: auto;
 	}
 
 .contenedor1
@@ -112,11 +110,15 @@ nav li a.active
 	}
 .contenedor4
 	{
+		display: flex;
+		flex-wrap: wrap;
   		background-color: #d5c75f;
   		width: 100%;
 	}
 .contenedor5
 	{
+		display: flex;
+		flex-wrap: wrap;
   		background-color: #d5c75f;
   		width: 100%;
 	}
@@ -166,6 +168,31 @@ nav li a.active
 			{
 				width: 25%;
 			}
+
+		.foto1
+			{
+				width: 33%;
+			}
+		.foto2
+			{
+				width: 33%;
+			}
+		.foto3
+			{
+				width: 33%;
+			}
+		.foto4
+			{
+				width: 33%;
+			}
+		.foto5
+			{
+				width: 33%;
+			}
+		.foto6
+			{
+				width: 33%;
+			}
 }
 
 @media screen and (max-width: 899px)
@@ -186,19 +213,21 @@ nav li a.active
 				width: 100%;
 				order: 1;
 			}	
-
 		.contenedor2 
 			{
 				width: 100%;
 				order: 2;
 			}
-		
 		.contenedor3 
 			{
 				width: 100%;
 				order: 3;
 			}
 
+		.pie_de_pagina
+			{
+				width: 100%;
+			}
 		.columna1
 			{
 				width: 100%;
@@ -219,6 +248,31 @@ nav li a.active
 				width: 100%;
 				order: 4;
 			}
+
+		.foto1
+			{
+				width: 100%;
+			}
+		.foto2
+			{
+				width: 100%;
+			}
+		.foto3
+			{
+				width: 100%;
+			}
+		.foto4
+			{
+				width: 100%;
+			}
+		.foto5
+			{
+				width: 100%;
+			}
+		.foto6
+			{
+				width: 100%;
+			}
 	}
 
 
@@ -238,8 +292,9 @@ footer
 		border-radius: bottom 10px;
 	}
 
-h4
+h3, h4
 	{
+		padding: 0px 10px 0px 10px;
 		font-weight: unset;
 	}
 
@@ -250,7 +305,7 @@ h4
 
 .pie_de_pagina
 	{
-		text-indent: 1cm;
+		text-indent: 0.25cm;
 		background-color: #C6d5c5;
 		text-align: left;
 		display: flex;
