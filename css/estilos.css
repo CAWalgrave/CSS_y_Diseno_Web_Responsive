@@ -3,17 +3,6 @@
 		font-family: Dancing_script;
 		src: url(DancingScript-Regular.otf);
 	}
-/*Imagen Central
-	En esta sección debes ubicar una imagen de tu preferencia, considera lo siguiente: 
-	Esta secccion debe tener la imagen centrada.
-    Establece como color de fondo #82c3a6.
-Imagen Secundaria:
-    En esta sección debes ubicar dos imágenes de tu preferencia, debajo de la imagen central una a la derecha y otra a la izquierda ten en cuenta lo siguiente: siguiente: 
-    Esta sección es a dos columnas usando flex para desktop y una columna para móvil 
-    Aplica como color de fondo #d5c75f y un borde de 1px.
-    Cada columna debe tener una imagen centrada y enlazar: la izquierda "paisajes" aplica un efecto de rotación de 10 grados cuando se coloca el puntero sobre ella, 
-    agrega color de sombra #82c3a6 y borde 2px y la derecha "retratos" aplica un efecto de traslación de 5px hacia arriba y 20px a la derecha cuando se coloca el puntero 
-    del ratón sobre ella agrega color de sombra #82c3a6 y borde 2px.*/
 
 body
 	{
@@ -41,7 +30,17 @@ body
     Agrega el Nombre del sitio "Comenzando con la fotografía" ubicado al lado izquierdo, en blanco la letra debe tener una sombra de 2px de color #02010a. 
     Aplica bordes redondeados en las esquinas superiores a 10px.
     Desarrolla un menú, para la versión desktop, a la derecha con enlaceas a tres páginas: Inicio, Paisajes, Retratos. La página actual debe tener estilo sin subrayado.
-*/
+Imagen Central
+	En esta sección debes ubicar una imagen de tu preferencia, considera lo siguiente: 
+	Esta secccion debe tener la imagen centrada.
+    Establece como color de fondo #82c3a6.
+Imagen Secundaria:
+    En esta sección debes ubicar dos imágenes de tu preferencia, debajo de la imagen central una a la derecha y otra a la izquierda ten en cuenta lo siguiente:
+    Esta sección es a dos columnas usando flex para desktop y una columna para móvil 
+    Aplica como color de fondo #d5c75f y un borde de 1px.
+    Cada columna debe tener una imagen centrada y enlazar: la izquierda "paisajes" aplica un efecto de rotación de 10 grados cuando se coloca el puntero sobre ella, 
+    agrega color de sombra #82c3a6 y borde 2px y la derecha "retratos" aplica un efecto de traslación de 5px hacia arriba y 20px a la derecha cuando se coloca el puntero 
+    del ratón sobre ella agrega color de sombra #82c3a6 y borde 2px.*/
 
 nav
 	{
@@ -69,6 +68,11 @@ nav li a.active
 		text-decoration: none;
 	}
 
+img
+	{
+		margin: auto;
+	}
+
 .encabezado
 	{
 		display: flex;
@@ -90,10 +94,6 @@ nav li a.active
 	 	width: 100%;
 		display: flex;
 		flex-flow: row wrap;
-	}
-img
-	{
-		margin: auto;
 	}
 
 .contenedor1
@@ -171,26 +171,38 @@ img
 
 		.foto1
 			{
+				-webkit-filter: opacity (25%);
+				filter: opacity(25%);
 				width: 33%;
 			}
 		.foto2
 			{
+				-webkit-filter: contrast (75%);
+				filter: contrast(75%);
 				width: 33%;
 			}
 		.foto3
 			{
+				-webkit-filter: sepia (75%);
+				filter: sepia(75%);
 				width: 33%;
 			}
 		.foto4
 			{
+				-webkit-filter: brightness (25%);
+				filter: brightness(25%);
 				width: 33%;
 			}
 		.foto5
 			{
+				-webkit-filter: grayscale (25%);
+				filter: grayscale(25%);
 				width: 33%;
 			}
 		.foto6
 			{
+				-webkit-filter: blur (15px);
+				filter: blur(15px);
 				width: 33%;
 			}
 }
@@ -251,26 +263,38 @@ img
 
 		.foto1
 			{
+				-webkit-filter: blur (15px);
+				filter: blur(15px);
 				width: 100%;
 			}
 		.foto2
 			{
+				-webkit-filter: grayscale (75%);
+				filter: grayscale(75%);
 				width: 100%;
 			}
 		.foto3
 			{
+				-webkit-filter: sepia (75%);
+				filter: sepia(75%);
 				width: 100%;
 			}
 		.foto4
 			{
+				-webkit-filter: brightness (25%);
+				filter: brightness(25%);
 				width: 100%;
 			}
 		.foto5
 			{
+				-webkit-filter: contrast (75%);
+				filter: contrast(75%);
 				width: 100%;
 			}
 		.foto6
 			{
+				-webkit-filter: opacity (25%);
+				filter: opacity(25%);
 				width: 100%;
 			}
 	}
@@ -291,7 +315,11 @@ footer
 		clear: both;
 		border-radius: bottom 10px;
 	}
-
+h3 a
+	{
+		text-decoration: none;
+		color:black !important;
+	}
 h3, h4
 	{
 		padding: 0px 10px 0px 10px;
