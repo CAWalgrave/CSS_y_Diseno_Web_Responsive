@@ -6,7 +6,9 @@
 
 body
 	{
-		font-family: Dancing_script;		
+		font-family: Dancing_script;
+		background-color: #02010a;
+		max-width: 900px;
 	}
 
 #EncabezadoDePagina
@@ -21,7 +23,8 @@ body
 	{				
 		width: 100%;
 		clear: both;
-		margin: 0 auto;
+		margin: auto;
+		border-radius: top 10px, bottom 10px;
 	}
 
 /*Cabecera:
@@ -68,9 +71,11 @@ nav li a.active
 		text-decoration: none;
 	}
 
-img
+.foto
 	{
-		margin: auto;
+		
+		border: 2px;
+		border-color:  #02010a;
 	}
 
 .encabezado
@@ -171,38 +176,38 @@ img
 
 		.foto1
 			{
-				-webkit-filter: opacity (25%);
-				filter: opacity(25%);
+				-webkit-filter: blur (10px);
+				filter: blur(10px);
 				width: 33%;
 			}
 		.foto2
 			{
-				-webkit-filter: contrast (75%);
-				filter: contrast(75%);
+				border: 2px;
+				border-color:  #02010a;
+				-webkit-filter: grayscale (100%);
+				filter: grayscale(100%);
 				width: 33%;
 			}
 		.foto3
 			{
-				-webkit-filter: sepia (75%);
-				filter: sepia(75%);
+				-webkit-filter: sepia (90%);
+				filter: sepia(90%);
 				width: 33%;
 			}
 		.foto4
 			{
-				-webkit-filter: brightness (25%);
-				filter: brightness(25%);
+				-webkit-filter: grayscale (100%);
+				filter: grayscale(100%);
 				width: 33%;
 			}
 		.foto5
 			{
-				-webkit-filter: grayscale (25%);
-				filter: grayscale(25%);
 				width: 33%;
 			}
 		.foto6
 			{
-				-webkit-filter: blur (15px);
-				filter: blur(15px);
+				-webkit-filter: grayscale (100%);
+				filter: grayscale(100%);
 				width: 33%;
 			}
 }
@@ -263,38 +268,36 @@ img
 
 		.foto1
 			{
-				-webkit-filter: blur (15px);
-				filter: blur(15px);
+				-webkit-filter: blur (10px);
+				filter: blur(10px);
 				width: 100%;
 			}
 		.foto2
 			{
-				-webkit-filter: grayscale (75%);
-				filter: grayscale(75%);
+				-webkit-filter: grayscale (100%);
+				filter: grayscale(100%);
 				width: 100%;
 			}
 		.foto3
 			{
-				-webkit-filter: sepia (75%);
-				filter: sepia(75%);
+				-webkit-filter: sepia (90%);
+				filter: sepia(90%);
 				width: 100%;
 			}
 		.foto4
 			{
-				-webkit-filter: brightness (25%);
-				filter: brightness(25%);
+				-webkit-filter: grayscale (100%);
+				filter: grayscale(100%);
 				width: 100%;
 			}
 		.foto5
 			{
-				-webkit-filter: contrast (75%);
-				filter: contrast(75%);
 				width: 100%;
 			}
 		.foto6
 			{
-				-webkit-filter: opacity (25%);
-				filter: opacity(25%);
+				-webkit-filter: grayscale (100%);
+				filter: grayscale(100%);
 				width: 100%;
 			}
 	}
@@ -312,8 +315,6 @@ img
 */
 footer 
 	{
-		clear: both;
-		border-radius: bottom 10px;
 	}
 h3 a
 	{
@@ -328,7 +329,8 @@ h3, h4
 
 #PieDePagina
 	{
-
+		clear: both;
+		border-radius: bottom 10px;
 	}
 
 .pie_de_pagina
